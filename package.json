@@ -1,0 +1,17 @@
+{
+    "name": "romannumoperations",
+    "version": "1.0.0",
+    "description": "roman num mathematical operations",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Raghunath",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.17.2",
+        "express": "^4.15.3",
+        "path": "^0.12.7",
+        "q": "^1.5.0"
+    }
+}

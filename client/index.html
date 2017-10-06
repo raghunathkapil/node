@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/client/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="/client/app.js"></script>
+    <title>Roman Numbers Calculation</title>
+</head>
+
+<body ng-app="romanCalculatorApp">
+    <div class="container">
+        <h1>Roman Numbers Calculation</h1>
+        <div ng-controller="calculatorController as calCtrl">
+
+            <form class="form-inline">
+                <div class="form-group">
+                    <input class="form-control" type="text" ng-model="calCtrl.roman1" />
+                </div>
+                <span ng-bind="calCtrl.operator"></span>
+                <div class="form-group">
+                    <input class="form-control" type="text" ng-model="calCtrl.roman2" />
+                </div>
+                <button class="btn btn-success" ng-click="calCtrl.getResult()"> = </button>
+                <span ng-bind="calCtrl.result"></span>
+            </form>
+            <br />
+
+            <p>Select Operation :
+                <button class="btn btn-default" ng-click="calCtrl.selectOperator('+')">+</button>
+                <button class="btn btn-default" ng-click="calCtrl.selectOperator('-')">-</button>
+                <button class="btn btn-default" ng-click="calCtrl.selectOperator('*')">*</button>
+                <button class="btn btn-default" ng-click="calCtrl.selectOperator('/')">/</button>
+                <button class="btn btn-default" ng-click="calCtrl.reset()"> Reset </button>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
