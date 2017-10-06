@@ -2,18 +2,12 @@
 
 Start with npm install to install all the dependencies.
 
-Port : 8090.
+Port : 8990.
 
-Use below api url to get the result.
+Once every thing is installed run the server with command 
+>node server.js
 
-http://localhost:8090/api/romanOperations
-and it contains body json object.
+In this example you can get Addition, Subtraction, Division and Multiplication of Roman Numbers.
 
-ex: {
-        "operation" :"-",
-        "value1":"C",
-        "value2":"I"
-    }
-
-Where "operation" takes('+', '-', '*', '/') and value1 & value2 are the two operands.
+Note: Clint side validations is not implemented. So, provid correct Roman numbers to work.
 
